@@ -1,3 +1,3 @@
 # posicionando-dio
-## Aprendendo conceitos de posicionamento , curso disponibilizado pela DioInnovation One.
+## Aprendendo conceitos sobre posicionamento , curso disponibilizado pela DioInnovation One.
 ## -Professora : Karen Santos

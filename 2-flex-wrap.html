@@ -10,7 +10,7 @@
             display: flex;
             height : 150px;
             border: 2px solid black;
-            max-width: 300px ;
+            max-width: 400px ;
         }
 
         .item{
@@ -22,6 +22,12 @@
         }
         .nowrap{
             flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
         }
         .blue{
             background-color: blue;
@@ -37,20 +43,28 @@
 </head>
 <body>
     <h1>NO WRAP</h1>  
-     <div class="flex-container">
+     <div class="flex-container nowrap">
          <div class="item blue">1</div>
          <div class="item green">2</div>
          <div class="item orange">3</div>
          <div class="item blue">1</div>
-         <div class="item green">2</div>
-         <div class="item orange">3</div>
-         <div class="item blue">1</div>
-         <div class="item green">2</div>
-         <div class="item orange">3</div>
-         <div class="item blue">1</div>
-         <div class="item green">2</div>
-         <div class="item orange">3</div>
+         
+     </div>
+     <h1>WRAP</h1>
+     <div class="flex-container wrap">
+         <div class="item orange">1</div>
+         <div class="item blue">2</div>
+         <div class="item green">3</div>
+         <div class="item blue">4</div>
      </div>
 
+     <h1>WRAPReverse</h1>
+     <div class="flex-container wrap-reverse">
+         <div class="item orange">1</div>
+         <div class="item blue">2</div>
+         <div class="item green">3</div>
+         <div class="item green">4</div>
+         
+     </div>
 </body>
 </html>

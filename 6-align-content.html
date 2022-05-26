@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <Style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orange;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </Style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui dolorem ipsum quia dolor</div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum quia dolor</div>
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum q</div>
+        <div class="item">Neque porro quisquam est qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum q</div>
+        <div class="item">Neque porro quisquam est qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum q</div>
+        <div class="item">Neque porro quisquam est qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum q</div>
+        <div class="item">Neque porro quisquam est qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Neque porro quisquam est qui dolorem</div>
+        <div class="item">Neque porro quisquam est qui doloremest qui </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem ipsum q</div>
+        <div class="item">Neque porro quisquam est qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest qui dolorem </div>
+        <div class="item">est qui dolorem ipsum quia dolorest  </div>
+    </div>
+</body>
+</html>
